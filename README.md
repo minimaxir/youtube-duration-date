@@ -1,9 +1,7 @@
 # youtube-duration-date
 Code and data needed to reproduce The Relationship Between YouTube Video Category and Length of the Video
 
-
-![](http://i.imgur.com/PvWYB2n.png)
-
+![](http://i.imgur.com/KY3xx1n.png)
 
 Data obtained from my scraped database of YouTube submission metadata with this SQL query:
 	
