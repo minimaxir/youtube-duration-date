@@ -19,6 +19,6 @@ plot <- ggplot(df, aes(x=as.Date(day), y=ma_duration)) +
 	annotate(geom="text", label = "July 29th, 2010\nTime Limit Increased from 10m to 15m", x=as.Date("2010-07-29") - 30, y=Inf, vjust=1.8, size=2, hjust=1, family="Avenir Next Condensed Regular", color="#1a1a1a", alpha=1) +
 	geom_vline(xintercept=as.numeric(as.Date("2010-12-09")), size=0.20, color="#1a1a1a", alpha=1, linetype="dashed") +
 	annotate(geom="text", label = "December 9th, 2010\nTime Limit Removed", x=as.Date("2010-12-09") + 45, y=Inf, vjust=1.8, size=2, hjust=0, family="Avenir Next Condensed Regular", color="#1a1a1a", alpha=1) +
-	labs(x = "Date of Video Submission", y="30-Day Moving Average of Daily Average Video Length", title="Impact of YouTube 15-Minute Video Time Limit Removal on Average Video Length")
+	labs(x = "Date of Video Submission to YouTube", y="30-Day Moving Average of Daily Average Video Length", title="Impact of YouTube 15-Minute Video Time Limit Removal on Average YouTube Video Length")
 
 max_save(plot, "youtube_duration_time", "YouTube API", w=6, h=3.5)
